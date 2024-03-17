@@ -8,7 +8,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-
 .home {
   display: flex;
   background-color: #ffffff;
@@ -17,15 +16,16 @@
 
 .homeContainer {
   background-color: #fbfbfb;
-  flex: 70%;
+  overflow-y: auto; /* Enable scrolling */
+  margin-left: 200px; /* Width of the navbar */
+  margin-top: 4rem;
 }
 
 .homeContainer .tophead {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 3rem;
-
+  padding: 2rem 3rem 0rem 3rem;
 }
 
 .widgetContainer {
@@ -35,99 +35,61 @@
   padding: 1rem 3rem;
 }
 
-
-.charts{
+.charts {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem 3rem;
-
 }
 
+.Chartleft .BarHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
 
-.Chartleft .title{
+.Chartleft .BarHead p {
+  font-size: 1.25rem;
+}
+
+.Chartleft .BarHead button {
+  font-size: 1rem;
+  border-radius: 3px;
+  border: none;
+  padding: 5px 10px;
+  color: rgb(38, 39, 38);
+  background-color: rgb(255, 255, 255);
+  font-size: 500;
+  background-color: rgb(167, 230, 185);
+}
+
+.Chartleft .title {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  padding-top: 10px;
   font-size: 25px;
   font-weight: 600;
 }
 
-
-.ChartRight{
+.ChartRight {
   padding: 2rem;
 }
 
-.ChartRight .Graph{
-  background-color: #FFFFFF;
+.ChartRight .DoughnutHead p {
+  font-size: 1.25rem;
+  padding-bottom: 1.75rem;
+}
+
+.ChartRight .Graph {
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid rgb(236, 231, 231);
   padding-bottom: 2rem;
-}
-
-
-
-
- .locations {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  padding-top: 10px;
-  font-size: 20px;
-
-}
-
-.conts {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  padding-top: 10px;
-  font-size: 16px;
-  color: rgba(143, 143, 143, 1);
-  border-bottom: 1px solid rgb(199, 199, 199);
-}
-
-.list {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: space-between;
-  font-size: 20px;
-}
-
-.item {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: start;
-  justify-content: space-between;
-  padding: 10px;
-  padding-top: 10px;
-  font-size: 16px;
-  /* border-bottom: 1px solid rgb(199, 199, 199); */
-}
-
-.item .small {
-  margin-top: 3px;
-  font-size: small;
-}
-
-.locations button {
-  border: 2px solid rgba(15, 164, 74, 1);
-  padding: 10px 20px;
-  border-radius: 10px;
-  color: rgba(15, 164, 74, 1);
-  font-size: 500;
+  padding: 2rem;
 }

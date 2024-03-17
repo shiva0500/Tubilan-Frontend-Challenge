@@ -11,7 +11,7 @@ const Navbar = () => {
         </div>
         <div className="search">
           <CiSearch fontSize={20} />
-          <input type="text" placeholder="Search" />
+          <input type="text" className="input-search" placeholder="Search..." />
         </div>
         <div className="nav_profile">
           <img className="userimg" src={picon} alt="#" />

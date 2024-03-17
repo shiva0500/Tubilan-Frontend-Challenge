@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import Chart from "chart.js/auto";
 
-const DoughnutGraph = ({ data, labels }) => {
+const DoughnutGraph = () => {
   const chartRef = useRef(null);
 
   useEffect(() => {
@@ -24,6 +24,22 @@ const DoughnutGraph = ({ data, labels }) => {
         ],
       },
       options: {
+        plugins: {
+          legend: {
+            display: false,
+            datalabels: {
+              color: "#fff",
+              formatter: (value, context) => {
+                return (
+                  context.chart.data.labels[context.dataIndex] +
+                  ": " +
+                  value +
+                  "%"
+                );
+              },
+            },
+          },
+        },
         maintainAspectRatio: false, // Prevent the chart from maintaining aspect ratio
         aspectRatio: 1, // Set a specific aspect ratio
       },
@@ -32,7 +48,7 @@ const DoughnutGraph = ({ data, labels }) => {
     return () => {
       doughnutChart.destroy();
     };
-  }, [data, labels]);
+  });
 
   return (
     <div
@@ -40,9 +56,11 @@ const DoughnutGraph = ({ data, labels }) => {
         backgroundColor: "#FFFFFF",
         maxWidth: "320px",
         margin: "0 auto",
+        width: "200px",
+        height: "200px",
       }}>
       {" "}
-      <canvas ref={chartRef} width={200} height={200}></canvas>
+      <canvas ref={chartRef}></canvas>
     </div>
   );
 };

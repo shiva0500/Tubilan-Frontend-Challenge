@@ -20,9 +20,25 @@ const BarGraph = () => {
         ],
       },
       options: {
+        plugins: {
+          legend: {
+            display: false,
+          },
+        },
         scales: {
+          x: {
+            grid: {
+              display: false, // Hide x-axis gridlines
+            },
+          },
+
           y: {
             beginAtZero: true,
+            ticks: {
+              min: 0,
+              max: 40,
+              stepSize: 20,
+            },
           },
         },
       },
@@ -34,7 +50,7 @@ const BarGraph = () => {
   });
 
   return (
-    <div style={{ "background-color": "#FFFFFF", padding:"1rem 0.5rem" }}>
+    <div style={{ "background-color": "#FFFFFF", padding: "1rem" }}>
       <canvas ref={chartRef}></canvas>
     </div>
   );

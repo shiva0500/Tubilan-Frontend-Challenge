@@ -49,10 +49,8 @@ const Sidebar = () => {
         </ul>
       </div>
       <div className="bottom">
-        <p className="logout">
-          <MdOutlineLogout fontSize={20} />
-          Log Out
-        </p>
+        <MdOutlineLogout fontSize={20} />
+        <p className="logout">Log Out</p>
       </div>
     </div>
   );

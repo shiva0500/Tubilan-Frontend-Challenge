@@ -1,0 +1,61 @@
+.locations {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+  padding-top: 10px;
+  font-size: 20px;
+  background-color: #ffffff;
+}
+
+.conts {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+  padding-top: 10px;
+  font-size: 16px;
+  color: rgba(143, 143, 143, 1);
+  border-bottom: 1px solid rgb(199, 199, 199);
+  background-color: #ffffff;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  font-size: 20px;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  padding-top: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid rgb(240, 238, 238);
+}
+
+.item .smallgreen {
+  margin-top: 3px;
+  font-size: small;
+  color: rgb(18, 221, 99);
+}
+
+.locations button {
+  border: 1px solid rgb(77, 229, 98);
+  padding: 5px 15px;
+  color: rgb(18, 221, 99);
+  background-color: rgb(255, 255, 255);
+  font-size: 300;
+}

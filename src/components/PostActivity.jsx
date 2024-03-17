@@ -3,7 +3,6 @@ import post from "../assets/post.png";
 import { HiDotsHorizontal } from "react-icons/hi";
 import { FaEye } from "react-icons/fa";
 
-
 const PostActivity = () => {
   return (
     <div className="PostActivity">

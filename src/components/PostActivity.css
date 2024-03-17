@@ -1,57 +1,53 @@
-
 .PostActivity {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: space-between;
-    padding-top: 1rem;
-    font-size: 20px;
-    background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  padding-top: 1rem;
+  font-size: 20px;
+  background-color: #ffffff;
 }
 
-
-
 .PostActivity .post {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    padding-top: 10px;
-    font-size: 20px;
-    /* border: 1px solid black; */
-    border-bottom: 2px solid rgb(223, 217, 217);
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  padding-top: 10px;
+  font-size: 20px;
+  /* border: 1px solid black; */
+  border-bottom: 2px solid rgb(223, 217, 217);
 }
 
 .PostActivity .content {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    width: 50%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 50%;
 }
 
 .PostActivity .content img {
-    width: 4rem;
+  width: 4rem;
 }
 .PostActivity .content .subtitle {
-    padding-left: 15px;
-    font-size: 16px;
+  padding-left: 15px;
+  font-size: 16px;
 }
 
 .PostActivity .date {
-    padding-right: 15px;
-    font-size: 16px;
-    width: 20%;
+  padding-right: 15px;
+  font-size: 16px;
+  width: 20%;
 }
 
 .PostActivity .views {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 16px;
-    z-index: 100;
-    width: 8%;
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 16px;
+  z-index: 100;
+  width: 8%;
 }

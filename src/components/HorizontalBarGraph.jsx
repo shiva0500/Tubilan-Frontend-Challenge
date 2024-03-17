@@ -9,21 +9,81 @@ const HorizontalBarGraph = () => {
     const barChart = new Chart(ctx, {
       type: "bar",
       data: {
-        labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        labels: ["Male", "Female", "Others"],
         datasets: [
           {
-            label: "",
-            data: [25, 20, 63, 42, 97, 55, 80],
-            backgroundColor: "rgb(200, 255, 235)",
-            borderWidth: 1,
+            label: "10%",
+            backgroundColor: "rgba(40, 51, 80, 1)",
+            data: [40, 0, 0],
+          },
+          {
+            label: "20%",
+            backgroundColor: "rgba(40, 51, 80, 1)",
+            data: [0, 20, 0],
+          },
+          {
+            label: "30%",
+            backgroundColor: "rgba(40, 51, 80, 1)",
+            data: [0, 0, 10],
+          },
+
+          {
+            label: "10%",
+            backgroundColor: "rgba(15, 164, 74, 1)",
+            data: [50, 0, 0],
+          },
+          {
+            label: "20%",
+            backgroundColor: "rgba(15, 164, 74, 1)",
+            data: [0, 40, 0],
+          },
+          {
+            label: "30%",
+            backgroundColor: "rgba(15, 164, 74, 1)",
+            data: [0, 0, 10],
+          },
+          {
+            label: "10%",
+            backgroundColor: "rgba(255, 248, 84, 1)",
+            data: [10, 0, 0],
+          },
+          {
+            label: "20%",
+            backgroundColor: "rgba(255, 248, 84, 1)",
+            data: [0, 20, 0],
+          },
+          {
+            label: "30%",
+            backgroundColor: "rgba(255, 248, 84, 1)",
+            data: [0, 0, 5],
           },
         ],
       },
       options: {
+        plugins: {
+          legend: {
+            display: false,
+          },
+        },
         indexAxis: "y",
         scales: {
           x: {
-            beginAtZero: true,
+            stacked: true,
+            grid: {
+              display: false, // Hide x-axis gridlines
+            },
+            ticks: {
+              display: false,
+            },
+          },
+          y: {
+            stacked: true,
+            grid: {
+              display: false, // Hide x-axis gridlines
+            },
+            ticks: {
+              display: false,
+            },
           },
         },
       },
